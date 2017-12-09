@@ -1,4 +1,3 @@
-
 WIN_COMBINATIONS = [
   [0, 1, 2],
   [3, 4, 5],
@@ -88,7 +87,8 @@ def play(board)
   end
   if won?(board)
     puts "Congratulations #{winner(board)}!"
-  elsif draw?(board)
+  else
+    draw?(board)
     puts "Cat's Game!"
   end
 end
